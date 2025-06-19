@@ -12,7 +12,7 @@ void main(){
     printf("Enter the range to end : ");
     scanf("%d", &e);
 
-    printf("Even numbers :- ", s, e);
+    printf("Alternate Numbers :- ", s, e);
     for (int n=s;n<=e;n=n+2) 
 	{
         printf("%d ",n);
