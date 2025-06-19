@@ -28,25 +28,14 @@ int main(){
 		printf("%d ",brr[i]);
 	}
 	// for merging two array into single array with third arrray
-//	for(int i=0;i<5;i++)
-//	{
-//		crr[i]=arr[i];
-//		crr[i+5]= brr[i];
-//	}
-//	printf("\n Merged Array\n");
-//	for(int i=0;i<10;i++)
-//	{
-//		printf("%d ", crr[i]);
-//	}
-    //for merging two array directly without third array
-    printf("\n Merged Array\n");
-    for(int i=0;i<5;i++)
-	{
-		printf("%d ",arr[i]);
-	}
 	for(int i=0;i<5;i++)
 	{
-		printf("%d ",brr[i]);
+		crr[i]=arr[i];
+		crr[i+5]= brr[i];
 	}
-		
+	printf("\n Merged Array\n");
+	for(int i=0;i<10;i++)
+	{
+		printf("%d ", crr[i]);
+	}
 }
