@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <h3>LOGIN FORM</h3>
+    <br>
+    <form action="/login" method="post" autocomplete="on">
+        <label for="name">USERNAME</label>
+        <br>
+        <br>
+        <input type="text" id="name" placeholder="ENTER USERNAME" required maxlength="30">
+        <br>
+        <br>
+
+        <label for="password">PASSWORD</label>
+        <br>
+        <br>
+        <input type="password" id="password" placeholder="ENTER PASSWORD" required minlength="6">
+        <br>
+        <br>
+        <input type="hidden" name="login_pass" value="abc123">
+        <button type="submit">LOGIN</button>
+        <br>
+        <br>
+        <a href="forgot password ?"> forgot password? </a>
+
+
+      </form>
+      <hr>
+      
+     <h3>SIGN UP FORM</h3>
+      <form action="/signup" method="post" enctype="multipart/form-data" autocomplete="off">
+    
+        <input type="text" id="name" placeholder="NAME">
+        <br>
+        <br>
+        <input type="text" id="location" placeholder="LOCATION">
+        <br>
+        <br>
+        <p>
+        <b> Gender</b><input type="radio">MALE <input type="radio">FEMALE
+        </p>
+        <br>
+        <ul type="none"> 
+            <li>SKILLS</li>
+            <ul type ="none">
+                <li><input type="checkbox" name="skills" value="Python">PYTHON</li>
+                <li><input type="checkbox" name="skills" value="Java">JAVA</li>
+                <li><input type="checkbox" name="skills" value="C++">C++</li>
+            </ul>
+            </li>
+        </ul>
+        
+        <br>
+
+        <label for="birthday">DOB:</label>
+        <br>
+        <input type="date" id="birthday" name="birthday">
+        <br>
+        <br>
+        <label for="resume">Upload Resume:</label><br>
+           <input type="file" id="resume" name="resume" accept=".pdf,.doc" required>
+            <br>
+            <br>
+            <button type="submit">Sign Up</button>
+          <input type="reset" value="Reset">
+        
+      </form>
+    
+</body>
+</html>
