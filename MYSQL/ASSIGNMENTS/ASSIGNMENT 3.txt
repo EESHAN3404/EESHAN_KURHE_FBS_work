@@ -29,7 +29,7 @@ mysql> insert into employees (
 Query OK, 10 rows affected (0.02 sec)
 Records: 10  Duplicates: 0  Warnings: 0
 
-mysql> select* from employees;
+mysql> table employees;
 +-------------+------------+-----------+----------+--------------+------------+---------+----------+---------------+------------+---------------+
 | employee_id | first_name | last_name | email    | phone_number | hire_date  | job_id  | salary   | commision_pct | manager_id | department_id |
 +-------------+------------+-----------+----------+--------------+------------+---------+----------+---------------+------------+---------------+
@@ -66,7 +66,7 @@ mysql> insert into department (department_id, department_name, manager_id, locat
 Query OK, 8 rows affected (0.02 sec)
 Records: 8  Duplicates: 0  Warnings: 0
 
-mysql> select* from department;
+mysql> table department;
 +---------------+------------------+------------+-------------+
 | department_id | department_name  | manager_id | location_id |
 +---------------+------------------+------------+-------------+
@@ -130,7 +130,7 @@ mysql> insert into jobs (job_id, job_title, min_salary, max_salary) values
 Query OK, 8 rows affected (0.01 sec)
 Records: 8  Duplicates: 0  Warnings: 0
 
-mysql> select* from jobs;
+mysql> table jobs;
 +------------+-------------------------------+------------+------------+
 | job_id     | job_title                     | min_salary | max_salary |
 +------------+-------------------------------+------------+------------+
@@ -149,7 +149,7 @@ mysql> insert into jobs (job_id, job_title, min_salary, max_salary) values
     ->   ('DEV_ENG', 'Developer Engineer', 5000, 12000);
 Query OK, 1 row affected (0.01 sec)
 
-mysql> select* from jobs;
+mysql> table jobs;
 +------------+-------------------------------+------------+------------+
 | job_id     | job_title                     | min_salary | max_salary |
 +------------+-------------------------------+------------+------------+
@@ -172,7 +172,7 @@ mysql> update employees
 Query OK, 3 rows affected (0.01 sec)
 Rows matched: 3  Changed: 3  Warnings: 0
 
-mysql> select* from employees;
+mysql> table employees;
 +-------------+------------+-----------+---------------+--------------+------------+---------+----------+---------------+------------+---------------+
 | employee_id | first_name | last_name | email         | phone_number | hire_date  | job_id  | salary   | commision_pct | manager_id | department_id |
 +-------------+------------+-----------+---------------+--------------+------------+---------+----------+---------------+------------+---------------+
@@ -202,7 +202,7 @@ mysql> update employees
 Query OK, 1 row affected (0.01 sec)
 Rows matched: 1  Changed: 1  Warnings: 0
 
-mysql> select* from employees;
+mysql> table employees;
 +-------------+------------+-----------+---------------+--------------+------------+---------+----------+---------------+------------+---------------+
 | employee_id | first_name | last_name | email         | phone_number | hire_date  | job_id  | salary   | commision_pct | manager_id | department_id |
 +-------------+------------+-----------+---------------+--------------+------------+---------+----------+---------------+------------+---------------+
@@ -228,7 +228,7 @@ mysql> update employees
 Query OK, 13 rows affected (0.01 sec)
 Rows matched: 13  Changed: 13  Warnings: 0
 
-mysql> select* from employees;
+mysql> table employees;
 +-------------+------------+-----------+---------------+--------------+------------+---------+----------+---------------+------------+---------------+
 | employee_id | first_name | last_name | email         | phone_number | hire_date  | job_id  | salary   | commision_pct | manager_id | department_id |
 +-------------+------------+-----------+---------------+--------------+------------+---------+----------+---------------+------------+---------------+
@@ -247,5 +247,6 @@ mysql> select* from employees;
 |         112 | Yash       | Gajare    | not available | 515.123.4582 | 2025-08-03 | AD_VP   |  8700.00 |          0.10 |        200 |            10 |
 +-------------+------------+-----------+---------------+--------------+------------+---------+----------+---------------+------------+---------------+
 13 rows in set (0.00 sec)
+
 
 mysql>
